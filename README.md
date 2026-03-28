@@ -388,8 +388,8 @@ Die Produktstammdaten (Item Numbers, Produktnamen, SAP-Bestände) werden über e
 | **Bostich Refill** | Grounding DINO | Einfache Kartonboxen, gut per Zero-Shot erkennbar |
 | **Kopfhörer** | Grounding DINO | Elektronik-Produkte werden zuverlässig erkannt |
 | **Schokolade** | SAM2 + DINO | Gestapelte Tafeln werden durch SAM2-Segmentierung einzeln getrennt |
-| **Jasskarten** | Florence-2 + DINO Hybrid | Caption-Zählung kombiniert mit Bounding Boxes für beste Genauigkeit |
-| **USB Plug, Audi/BMW Ersatzteil** | none | Manuell geführt – kein visuelles Erkennungsmodell zugewiesen |
+| **Jasskarten** | yolov26n trained | Caption-Zählung kombiniert mit Bounding Boxes für beste Genauigkeit |
+| **USB Plug, Audi/BMW Ersatzteil** | Grounding DINO | Manuell geführt – kein visuelles Erkennungsmodell zugewiesen |
 
 **Eingesetzte Modelle:**
 - **Grounding DINO** (`IDEA-Research/grounding-dino-tiny`): Zero-Shot Object Detection mit Text-Prompts – erkennt Objekte ohne eigenes Training, nur anhand einer Textbeschreibung. Schwellwert: 0.30, mit NMS-Filterung und Seitenverhältnis-Checks.
