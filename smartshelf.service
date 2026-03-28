@@ -1,0 +1,17 @@
+[Unit]
+Description=SmartShelf Pi Client
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/smartshelf
+ExecStart=/home/admin/smartshelf/venv/bin/python -m pi.pi_client
+Restart=on-failure
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/home/admin/smartshelf
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Jasskarte']
+
+roboflow:
+  workspace: janniss-workspace
+  project: my-first-project-unocw
+  version: 2
+  license: Private
+  url: https://app.roboflow.com/janniss-workspace/my-first-project-unocw/2

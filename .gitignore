@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# YOLO model cache
+*.pt
+runs/
+
+# Pi camera captures
+captures/
+*.jpg
+*.png
+*.jpeg
+
+# Ausnahmen: Dokumentation + Trainingsdaten duerfen ins Repo
+!doc_pictures/**/*.jpg
+!doc_pictures/**/*.jpeg
+!doc_pictures/**/*.png
+!dataset_roboflow_kaggle/**/*.jpg
+!dataset_roboflow_kaggle/**/*.jpeg
+!dataset_roboflow_kaggle/**/*.png
+!dataset_roboflow_kaggle/**/*.pt
+
+# Logs
+*.log
+*.onnx
